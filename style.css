@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo img {
+  margin: 15px auto 10px auto;
+}
+
+.localisation {
+  background-color: #eaeaea;
+}
+/*# sourceMappingURL=style.css.map */
