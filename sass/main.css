@@ -1,11 +1,20 @@
 @font-face {
-  font-family: "Roboto-regular";
+  font-family: "Roboto";
   src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Shrikland";
+  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("ttf");
+}
+
 body {
-  font-family: 'Roboto-regular', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
+}
+
+h1 {
+  font-family: 'Shrikland', sans-serif;
 }
 
 header .header-logo {
@@ -106,6 +115,37 @@ header .reserve-menu .reserve-menu-button:hover {
           transition-timing-function: ease-in-out;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+
+footer .footer-title {
+  padding-top: 30px;
+  margin-left: 5%;
+}
+
+footer .footer-links {
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+footer .footer-links .footer-link {
+  list-style: none;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+footer .footer-links .utensils {
+  width: 10px;
+  cursor: pointer;
+}
+
+footer .footer-links .handshake {
+  width: 12px;
+  cursor: pointer;
 }
 
 .info-title {

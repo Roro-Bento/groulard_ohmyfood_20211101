@@ -1,0 +1,25 @@
+footer {
+    background-color: #353535;
+    color: white;
+    .footer-title {
+        padding-top: 30px;
+        margin-left: 5%;
+    }
+    .footer-links {
+        margin: 0;
+        padding-bottom: 30px;
+        .footer-link {
+            list-style: none;
+            line-height: 25px;
+            cursor: pointer;
+        }
+        .utensils {
+            width: 10px;
+            cursor: pointer;
+        }
+        .handshake {
+            width: 12px;
+            cursor: pointer;
+        }
+    }
+}
