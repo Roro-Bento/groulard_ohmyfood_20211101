@@ -187,4 +187,103 @@ header .reserve-menu .reserve-menu-button:hover {
   -ms-grid-column-align: center;
       justify-self: center;
 }
+
+.restaurant {
+  margin-top: 80px;
+  padding-top: 20px;
+  background-color: #fafafa;
+}
+
+.restaurant .restaurant-title {
+  margin-top: 30px;
+  margin-left: 5%;
+}
+
+.restaurant .restaurant-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurant .restaurant-card .restaurant-img {
+  width: 330px;
+  max-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom {
+  width: 330px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  padding: 4px 0 4px 0;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px 0.5rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 0.5rem rgba(0, 0, 0, 0.4);
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .restaurant-infos {
+  margin-top: -3px;
+  margin-left: 20px;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .restaurant-infos .restaurant-info-title {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  width: 170px;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .restaurant-infos .restaurant-info-text {
+  margin-top: 5px;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .heart-btn-property {
+  width: 25px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .heart-btn-empty {
+  left: 95px;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .heart-btn-empty:hover {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .heart-btn-full {
+  left: 66px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.restaurant .restaurant-card .restaurant-card-bottom .heart-btn-full:hover {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.restaurant .restaurant-card .last-item {
+  margin-bottom: 50px;
+}
 /*# sourceMappingURL=main.css.map */
