@@ -80,6 +80,10 @@
             padding: 4px 0 4px 0;
             margin-bottom: 20px;
             box-shadow: 0 5px 0.5rem rgba(0, 0, 0, 0.4);
+            .restaurant-link {
+                text-decoration: none;
+                color: black;
+            }
             .restaurant-infos {
                 margin-top: -3px;
                 margin-left: 20px;
@@ -107,7 +111,7 @@
                 }
             }
             .heart-btn-full {
-                left: 66px;
+                left: 67px;
                 opacity: 0;
                 transition: opacity 0.5s;
                 &:hover {

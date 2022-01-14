@@ -20,3 +20,106 @@
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
     }
 }
+
+@mixin loading {
+    @keyframes load {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .first {
+        animation: load 1s ease-in-out;
+    }
+    .second {
+        animation: load 3s ease-in-out;
+    }
+    .third {
+        animation: load 5s ease-in-out;
+    }
+}
+
+@mixin validate {
+    .card {
+        cursor: pointer;
+    }
+    .starter-price,
+    .course-price,
+    .dessert-price {
+        transition: padding-right 450ms ease-in-out;
+    }
+    .validate {
+        transition: transform 500ms ease-in-out;
+        display: flex;
+        position: absolute;
+        width: 30px;
+        height: 53px;
+        justify-content: center;
+        align-items: center;
+        background-color: $tierciary-color;
+        border-radius: 0 10px 10px 0;
+        right: -50px;
+        padding: 4px 10px 4px 10px;
+        opacity: 1;
+        .check-icon {
+            width: 20px;
+            transition: transform 500ms ease-in-out;
+        }
+    }
+    .one {
+        top: 139px;
+    }
+    .two {
+        top: 215px;
+    }
+    .three {
+        top: 291px;
+    }
+    .four {
+        top: 421px;
+    }
+    .five {
+        top: 497px;
+    }
+    .six {
+        top: 573px;
+    }
+    .seven {
+        top: 703px;
+    }
+    .eight {
+        top: 779px;
+    }
+    .nine {
+        top: 855px;
+    }
+    .card:hover {
+        .dessert-title {
+            max-width: 230px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .starter-price,
+        .course-price,
+        .dessert-price {
+            padding-right: 45px;
+        }
+        .starter-desc,
+        .course-desc,
+        .dessert-desc {
+            transition: max-width 1s ease-in-out;
+            max-width: 220px;
+        }
+        .validate {
+            display: flex;
+            opacity: 1;
+            transform: translate(-69px);
+            .check-icon {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

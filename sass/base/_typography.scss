@@ -1,18 +1,16 @@
-@font-face {
-    font-family: "Roboto";
-    src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Shrikland";
-    src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("ttf");
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
 h1 {
-    font-family: 'Shrikland', sans-serif;
+    font-family: 'Shrikhand', sans-serif;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }

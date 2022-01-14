@@ -1,0 +1,129 @@
+main {
+    .reserve-btn {
+        background-color: rgb(250, 250, 250);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2,
+        p {
+            text-align: center;
+            max-width: 80%;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+        .reserve-menu-button {
+            @include button;
+            margin: 50px 0 70px 0;
+        }
+    }
+    margin-top: -25px;
+    position: relative;
+    .menu {
+        border-radius: 25px 25px 0 0;
+        background-color: rgb(246, 246, 246);
+        .title {
+            margin-left: 8%;
+            margin-top: 26px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .line {
+            width: 40px;
+            height: 3px;
+            background-color: $tierciary-color;
+            margin-bottom: 16px;
+            margin-left: 8%;
+        }
+        .menu-top {
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-title {
+            margin-top: 0;
+            padding: 15px 0 0 15px;
+        }
+        .cards {
+            @include loading;
+            @include validate;
+        }
+        .menu-like {
+            .heart-btn-property {
+                width: 25px;
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .heart-btn-empty {
+                transition: opacity 0.5s;
+                &:hover {
+                    transition: opacity 0.5s;
+                    opacity: 0;
+                }
+            }
+            .heart-btn-full {
+                opacity: 0;
+                transition: opacity 0.5s;
+                &:hover {
+                    transition: opacity 0.5s;
+                    opacity: 1;
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            .card {
+                padding: 5px 0;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .starter-card,
+            .course-card,
+            .dessert-card {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+                background-color: white;
+                box-shadow: 0 0 0.5rem rgba(128, 128, 128, 0.5);
+                border-radius: 10px;
+                .starter-title,
+                .starter-desc,
+                .course-title,
+                .course-desc,
+                .dessert-title,
+                .dessert-desc {
+                    margin: 5px 5px 5px 15px;
+                    transition: max-width 500ms ease-in-out;
+                    max-width: 250px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .starter-title,
+                .course-title,
+                .dessert-title {
+                    font-weight: 700;
+                }
+                .starter-desc,
+                .course-desc,
+                .dessert-desc {
+                    font-size: 14px;
+                }
+                .starter-price,
+                .course-price,
+                .dessert-price {
+                    margin: 0 15px 5px 0;
+                }
+            }
+        }
+    }
+}
