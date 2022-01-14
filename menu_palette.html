@@ -5,61 +5,186 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
     <title>Menu La Palette du Goût</title>
 </head>
 
 <body>
     <header>
-        <div class="header-top">
+        <div class="header-logo no-shadow">
             <img src="" alt="" class="header-arrow">
-            <img src="" alt="" class="header-logo">
+            <img src="images/logo/ohmyfood@2x.svg" alt="logo">
         </div>
-        <div class="header-image"></div>
+        <div class="header-image">
+            <img src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette picture">
+        </div>
     </header>
     <main>
         <section class="menu">
+            <div class="menu-top">
+                <h1 class="menu-title">La palette du goût</h1>
+                <div class="menu-like">
+                    <svg id="heart" class="heart-btn-empty heart-btn-property" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="heart-btn-full heart-btn-property">
+                    <linearGradient id="heart-gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="#9356dc"/>
+                        <stop offset="25%" stop-color="#b35cdc"/>
+                        <stop offset="50%" stop-color="#cf64dc"/>
+                        <stop offset="75%" stop-color="#e86edb"/>
+                        <stop offset="100%" stop-color="#ff79da"/>
+                    </linearGradient>
+                    <path fill="url(#heart-gradient)" d="M 458.4 64.3 C 400.6 15.7 311.3 23 256 79.3 C 200.7 23 111.4 15.6 53.6 64.3 C -21.6 127.6 -10.6 230.8 43 285.5 l 175.4 178.7 c 10 10.2 23.4 15.9 37.6 15.9 c 14.3 0 27.6 -5.6 37.6 -15.8 L 469 285.6 c 53.5 -54.7 64.7 -157.9 -10.6 -221.3 z z"/>
+                </svg>
+                </div>
+            </div>
             <div class="starters">
-                <p class="title"></p>
-                <div class="starter-card">
-                    <div class="starter-info">
-                        <p class="starter-title"></p>
-                        <p class="starter-desc"></p>
+                <p class="title">Entrées</p>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="starter-card card first">
+                        <div class="starter-info">
+                            <p class="starter-title">Fricassée d'escargot</p>
+                            <p class="starter-desc">Au piment d'espelette</p>
+                        </div>
+                        <div class="starter-price">25€</div>
+                        <div class="validate one">
+                            <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                        </div>
                     </div>
-                    <div class="starter-price"></div>
+                    <div class="starter-card card second">
+                        <div class="starter-info">
+                            <p class="starter-title">Foie gras de canard mi-cuit</p>
+                            <p class="starter-desc">Et ses copaux de truffe noire</p>
+                        </div>
+                        <div>
+                            <div class="starter-price">35€</div>
+                            <div class="validate two">
+                                <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="starter-card card third">
+                        <div class="starter-info">
+                            <p class="starter-title">Oeuf au plat</p>
+                            <p class="starter-desc">Assaisonné à la truffe sur son lit de salade</p>
+                        </div>
+                        <div>
+                            <div class="starter-price">20€</div>
+                            <div class="validate three">
+                                <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="course">
-                <div class="title"></div>
-                <div class="course-card">
-                    <div class="course-info">
-                        <p class="course-title"></p>
-                        <p class="course-desc"></p>
+                <div class="title">Plats</div>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="course-card card first">
+                        <div class="course-info">
+                            <p class="course-title">Filet de boeuf aux fines herbes</p>
+                            <p class="course-desc">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div>
+                            <div class="course-price">40€</div>
+                            <div class="validate four">
+                                <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                            </div>
+                        </div>
                     </div>
-                    <div class="course-price"></div>
+                    <div class="course-card card second">
+                        <div class="course-info">
+                            <p class="course-title">Parmentier de queue de boeuf</p>
+                            <p class="course-desc">A la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <div>
+                            <div class="course-price">35€</div>
+                            <div class="validate five">
+                                <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-card card third">
+                        <div class="course-info">
+                            <p class="course-title">Filet de turbo</p>
+                            <p class="course-desc">Aux agrumes</p>
+                        </div>
+                        <div class="course-price">44€</div>
+                        <div class="validate six">
+                            <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="dessert">
-                <div class="title"></div>
-                <div class="dessert-card">
-                    <div class="dessert-info">
-                        <p class="dessert-title"></p>
-                        <p class="dessert-desc"></p>
+                <div class="title">Desserts</div>
+                <div class="line"></div>
+                <div class="cards">
+                    <div class="dessert-card card first">
+                        <div class="dessert-info">
+                            <p class="dessert-title">Paris-Brest</p>
+                            <p class="dessert-desc">Revisité</p>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="dessert-price">18€</div>
+                                <div class="validate seven">
+                                    <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="dessert-price"></div>
+                    <div class="dessert-card card second">
+                        <div class="dessert-info">
+                            <p class="dessert-title">Macaron au chocolat d'exception</p>
+                            <p class="dessert-desc">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="dessert-price">22€</div>
+                                <div class="validate eight">
+                                    <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dessert-card card third">
+                        <div class="dessert-info">
+                            <p class="dessert-title">Mousse au chocolat</p>
+                            <p class="dessert-desc">Au piment d'espelette et à la truffe noire</p>
+                        </div>
+                        <div>
+                            <div class="dessert-price">23€</div>
+                            <div class="validate nine">
+                                <img src="/images/icons/check-circle-solid.svg" alt="check icon" class="check-icon">
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section>
-            <div class="validate-button">
-                <button class="order">Commander</button>
+            <div class="reserve-btn">
+                <button class="reserve-menu-button"><a href="#">Commander</a></button>
             </div>
         </section>
     </main>
     <footer>
-        <h1 class="title">ohmyfood</h1>
+        <h1 class="footer-title">ohmyfood</h1>
         <ul class="footer-links">
-            <li class="footer-link cutlery">Proposer un restaurant</li>
-            <li class="footer-link handshake">Devenir partenaire</li>
+            <li class="footer-link">
+                <svg class="utensils" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="utensils" class="svg-inline--fa fa-utensils fa-w-13" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 512">
+                    <path fill="white" d="M207.9 15.2c.8 4.7 16.1 94.5 16.1 128.8 0 52.3-27.8 89.6-68.9 104.6L168 486.7c.7 13.7-10.2 25.3-24 25.3H80c-13.7 0-24.7-11.5-24-25.3l12.9-238.1C27.7 233.6 0 196.2 0 144 0 109.6 15.3 19.9 16.1 15.2 19.3-5.1 61.4-5.4 64 16.3v141.2c1.3 3.4 15.1 3.2 16 0 1.4-25.3 7.9-139.2 8-141.8 3.3-20.8 44.7-20.8 47.9 0 .2 2.7 6.6 116.5 8 141.8.9 3.2 14.8 3.4 16 0V16.3c2.6-21.6 44.8-21.4 48-1.1zm119.2 285.7l-15 185.1c-1.2 14 9.9 26 23.9 26h56c13.3 0 24-10.7 24-24V24c0-13.2-10.7-24-24-24-82.5 0-221.4 178.5-64.9 300.9z"></path>
+                </svg> Proposer un restaurant</li>
+            <li class="footer-link">
+                <svg class="handshake" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hands-helping" class="svg-inline--fa fa-hands-helping fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                    <path fill="white" d="M488 192H336v56c0 39.7-32.3 72-72 72s-72-32.3-72-72V126.4l-64.9 39C107.8 176.9 96 197.8 96 220.2v47.3l-80 46.2C.7 322.5-4.6 342.1 4.3 357.4l80 138.6c8.8 15.3 28.4 20.5 43.7 11.7L231.4 448H368c35.3 0 64-28.7 64-64h16c17.7 0 32-14.3 32-32v-64h8c13.3 0 24-10.7 24-24v-48c0-13.3-10.7-24-24-24zm147.7-37.4L555.7 16C546.9.7 527.3-4.5 512 4.3L408.6 64H306.4c-12 0-23.7 3.4-33.9 9.7L239 94.6c-9.4 5.8-15 16.1-15 27.1V248c0 22.1 17.9 40 40 40s40-17.9 40-40v-88h184c30.9 0 56 25.1 56 56v28.5l80-46.2c15.3-8.9 20.5-28.4 11.7-43.7z"></path>
+                </svg> Devenir partenaire
+            </li>
             <li class="footer-link">Mentions légales</li>
             <li class="footer-link">Contact</li>
         </ul>

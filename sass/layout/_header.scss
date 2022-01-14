@@ -8,6 +8,9 @@ header {
         position: relative;
         z-index: 2;
     }
+    .no-shadow {
+        box-shadow: none;
+    }
     .localisation-elements {
         display: flex;
         justify-content: center;
@@ -35,6 +38,13 @@ header {
         .reserve-menu-button {
             @include button;
             margin: 20px 0 20px 0;
+        }
+    }
+    .header-image {
+        img {
+            max-width: 100%;
+            position: initial;
+            z-index: -1
         }
     }
 }

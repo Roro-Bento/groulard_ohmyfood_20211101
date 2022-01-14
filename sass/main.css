@@ -1,20 +1,18 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: "Shrikland";
-  src: url("../../fonts/Shrikhand/Shrikhand-Regular.ttf") format("ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
 h1 {
-  font-family: 'Shrikland', sans-serif;
+  font-family: 'Shrikhand', sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header .header-logo {
@@ -32,6 +30,11 @@ header .header-logo {
   padding: 15px 0 10px 0;
   position: relative;
   z-index: 2;
+}
+
+header .no-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header .localisation-elements {
@@ -117,6 +120,12 @@ header .reserve-menu .reserve-menu-button:hover {
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
 }
 
+header .header-image img {
+  max-width: 100%;
+  position: initial;
+  z-index: -1;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -125,6 +134,7 @@ footer {
 footer .footer-title {
   padding-top: 30px;
   margin-left: 5%;
+  margin-top: 0;
 }
 
 footer .footer-links {
@@ -276,6 +286,11 @@ footer .footer-links .handshake {
           box-shadow: 0 5px 0.5rem rgba(0, 0, 0, 0.4);
 }
 
+.restaurant .restaurant-card .restaurant-card-bottom .restaurant-link {
+  text-decoration: none;
+  color: black;
+}
+
 .restaurant .restaurant-card .restaurant-card-bottom .restaurant-infos {
   margin-top: -3px;
   margin-left: 20px;
@@ -311,7 +326,7 @@ footer .footer-links .handshake {
 }
 
 .restaurant .restaurant-card .restaurant-card-bottom .heart-btn-full {
-  left: 66px;
+  left: 67px;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
@@ -325,5 +340,394 @@ footer .footer-links .handshake {
 
 .restaurant .restaurant-card .last-item {
   margin-bottom: 50px;
+}
+
+main {
+  margin-top: -25px;
+  position: relative;
+}
+
+main .reserve-btn {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .reserve-btn h2,
+main .reserve-btn p {
+  text-align: center;
+  max-width: 80%;
+}
+
+main .reserve-btn h2 {
+  margin-bottom: 0;
+}
+
+main .reserve-btn .reserve-menu-button {
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  margin: 50px 0 70px 0;
+}
+
+main .reserve-btn .reserve-menu-button a {
+  color: white;
+  text-decoration: none;
+}
+
+main .reserve-btn .reserve-menu-button:hover {
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 100ms;
+          transition-duration: 100ms;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.6);
+}
+
+main .menu {
+  border-radius: 25px 25px 0 0;
+  background-color: #f6f6f6;
+}
+
+main .menu .title {
+  margin-left: 8%;
+  margin-top: 26px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+main .menu .line {
+  width: 40px;
+  height: 3px;
+  background-color: #99E2D0;
+  margin-bottom: 16px;
+  margin-left: 8%;
+}
+
+main .menu .menu-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .menu .menu-title {
+  margin-top: 0;
+  padding: 15px 0 0 15px;
+}
+
+@-webkit-keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+main .menu .cards .first {
+  -webkit-animation: load 1s ease-in-out;
+          animation: load 1s ease-in-out;
+}
+
+main .menu .cards .second {
+  -webkit-animation: load 3s ease-in-out;
+          animation: load 3s ease-in-out;
+}
+
+main .menu .cards .third {
+  -webkit-animation: load 5s ease-in-out;
+          animation: load 5s ease-in-out;
+}
+
+main .menu .cards .card {
+  cursor: pointer;
+}
+
+main .menu .cards .starter-price,
+main .menu .cards .course-price,
+main .menu .cards .dessert-price {
+  -webkit-transition: padding-right 450ms ease-in-out;
+  transition: padding-right 450ms ease-in-out;
+}
+
+main .menu .cards .validate {
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 30px;
+  height: 53px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+  right: -50px;
+  padding: 4px 10px 4px 10px;
+  opacity: 1;
+}
+
+main .menu .cards .validate .check-icon {
+  width: 20px;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+main .menu .cards .one {
+  top: 139px;
+}
+
+main .menu .cards .two {
+  top: 215px;
+}
+
+main .menu .cards .three {
+  top: 291px;
+}
+
+main .menu .cards .four {
+  top: 421px;
+}
+
+main .menu .cards .five {
+  top: 497px;
+}
+
+main .menu .cards .six {
+  top: 573px;
+}
+
+main .menu .cards .seven {
+  top: 703px;
+}
+
+main .menu .cards .eight {
+  top: 779px;
+}
+
+main .menu .cards .nine {
+  top: 855px;
+}
+
+main .menu .cards .card:hover .dessert-title {
+  max-width: 230px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main .menu .cards .card:hover .starter-price,
+main .menu .cards .card:hover .course-price,
+main .menu .cards .card:hover .dessert-price {
+  padding-right: 45px;
+}
+
+main .menu .cards .card:hover .starter-desc,
+main .menu .cards .card:hover .course-desc,
+main .menu .cards .card:hover .dessert-desc {
+  -webkit-transition: max-width 1s ease-in-out;
+  transition: max-width 1s ease-in-out;
+  max-width: 220px;
+}
+
+main .menu .cards .card:hover .validate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+  -webkit-transform: translate(-69px);
+          transform: translate(-69px);
+}
+
+main .menu .cards .card:hover .validate .check-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+main .menu .menu-like .heart-btn-property {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+main .menu .menu-like .heart-btn-empty {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+main .menu .menu-like .heart-btn-empty:hover {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+main .menu .menu-like .heart-btn-full {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+main .menu .menu-like .heart-btn-full:hover {
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+main .menu .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 15px;
+}
+
+main .menu .cards .card {
+  padding: 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+main .menu .cards .starter-card,
+main .menu .cards .course-card,
+main .menu .cards .dessert-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  -webkit-box-shadow: 0 0 0.5rem rgba(128, 128, 128, 0.5);
+          box-shadow: 0 0 0.5rem rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+main .menu .cards .starter-card .starter-title,
+main .menu .cards .starter-card .starter-desc,
+main .menu .cards .starter-card .course-title,
+main .menu .cards .starter-card .course-desc,
+main .menu .cards .starter-card .dessert-title,
+main .menu .cards .starter-card .dessert-desc,
+main .menu .cards .course-card .starter-title,
+main .menu .cards .course-card .starter-desc,
+main .menu .cards .course-card .course-title,
+main .menu .cards .course-card .course-desc,
+main .menu .cards .course-card .dessert-title,
+main .menu .cards .course-card .dessert-desc,
+main .menu .cards .dessert-card .starter-title,
+main .menu .cards .dessert-card .starter-desc,
+main .menu .cards .dessert-card .course-title,
+main .menu .cards .dessert-card .course-desc,
+main .menu .cards .dessert-card .dessert-title,
+main .menu .cards .dessert-card .dessert-desc {
+  margin: 5px 5px 5px 15px;
+  -webkit-transition: max-width 500ms ease-in-out;
+  transition: max-width 500ms ease-in-out;
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+main .menu .cards .starter-card .starter-title,
+main .menu .cards .starter-card .course-title,
+main .menu .cards .starter-card .dessert-title,
+main .menu .cards .course-card .starter-title,
+main .menu .cards .course-card .course-title,
+main .menu .cards .course-card .dessert-title,
+main .menu .cards .dessert-card .starter-title,
+main .menu .cards .dessert-card .course-title,
+main .menu .cards .dessert-card .dessert-title {
+  font-weight: 700;
+}
+
+main .menu .cards .starter-card .starter-desc,
+main .menu .cards .starter-card .course-desc,
+main .menu .cards .starter-card .dessert-desc,
+main .menu .cards .course-card .starter-desc,
+main .menu .cards .course-card .course-desc,
+main .menu .cards .course-card .dessert-desc,
+main .menu .cards .dessert-card .starter-desc,
+main .menu .cards .dessert-card .course-desc,
+main .menu .cards .dessert-card .dessert-desc {
+  font-size: 14px;
+}
+
+main .menu .cards .starter-card .starter-price,
+main .menu .cards .starter-card .course-price,
+main .menu .cards .starter-card .dessert-price,
+main .menu .cards .course-card .starter-price,
+main .menu .cards .course-card .course-price,
+main .menu .cards .course-card .dessert-price,
+main .menu .cards .dessert-card .starter-price,
+main .menu .cards .dessert-card .course-price,
+main .menu .cards .dessert-card .dessert-price {
+  margin: 0 15px 5px 0;
 }
 /*# sourceMappingURL=main.css.map */
